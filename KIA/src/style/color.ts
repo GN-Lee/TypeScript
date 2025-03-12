@@ -15,12 +15,12 @@ type HexColor = `#${string}`;
 type Color<T extends PrimaryColors | SecondaryColors | CoolColors> = {
   [key in T]: HexColor;
 };
-const PrimaryColor: Color<PrimaryColors> = {
+export const PrimaryColor: Color<PrimaryColors> = {
   Black: "#05141f",
   White: "#ffffff",
 };
 
-const SecondaryColor: Color<SecondaryColors> = {
+export const SecondaryColor: Color<SecondaryColors> = {
   GreenDark: "#4C5B35",
   GreenVariant: "#589000",
   GreenLight: "#DAEDBD",
@@ -30,7 +30,7 @@ const SecondaryColor: Color<SecondaryColors> = {
   RedVariant: "#EA0029",
 };
 
-const CoolColor: Color<CoolColors> = {
+export const CoolColor: Color<CoolColors> = {
   CoolGrey5: "#F2F4F6",
   CoolGrey10: "#E6E7E9",
   CoolGrey20: "#CDD0D2",
